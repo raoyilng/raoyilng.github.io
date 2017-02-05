@@ -44,6 +44,9 @@
     <meta http-equiv="cleartype" content="on">
     <link rel="shortcut icon" href="http://cdn.sanscolour.com/images/meta/SansColour_Shortcut_Icon_32x32.gif">
     <style>
+        .nav{
+            display: none;
+        }
         .fs-img {
             width: 100%;
             max-width: 1200px;
@@ -78,6 +81,7 @@
     <script type="text/javascript" src="./tracker.js.下载"></script>
     <script async="" src="./analytics.js.下载"></script>
     <script src="./webfont.js.下载" type="text/javascript" async=""></script>
+    <script src="./jquery-2.1.1.min.js"></script>
     <script>
         // configuration
         foresight = {
@@ -90,6 +94,20 @@
                 speedTestKB: 50
             }
         };
+
+        $(window).scroll(function(){
+            var content = $('.home-content');
+            var nav = $('.nav')
+            if(content.hasClass('is-hidden')){
+                    nav.css('display','block')
+                }else{
+                nav.css('display','none')
+
+            }
+//            if(content.hasClass('is-hidden')){
+//                console.log('1');
+//            })
+        })
     </script>
     <link href="./all-321fd7e1.css" media="screen" rel="stylesheet">
     <script>
