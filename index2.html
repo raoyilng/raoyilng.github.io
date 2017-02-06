@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script src="./jquery-2.1.1.min.js"></script>
+</head>
+<style>
+	div{
+		width: 300px;
+		height: 20px;
+		background-color: red;
+		margin: 0 auto;
+	}
+</style>
+<body>
+	<div class="fuck">
+		
+	</div>
+</body>
+<script>
+var i = 10;  
+var fuck = $('.fuck')
+function remainTime(){  
+    if(i==0){  
+        console.log(121)
+    }
+    console.log(i--)  
+    // document.getElementById('endtime').innerHTML=i--; 
+    // fuck.css('magintop'); 
+      setTimeout("remainTime()",1000);//1000为1秒钟
+}  
+remainTime(); 
+</script>
+</html>
