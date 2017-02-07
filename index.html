@@ -107,49 +107,49 @@
 
     <script>
         // configuration
-        foresight = {
-            options: {
-                // forcedPixelRatio: 1,
-                // forcedBandwidth: 'high' // high or low
-                // minKbpsForHighBandwidth: 800,
-                // speedTestExpireMinutes: 60,
-                speedTestUri: 'http://cdn.sanscolour.com/images/speed-test/50K.jpg',
-                speedTestKB: 50
-            }
-        };
+//        foresight = {
+//            options: {
+//                // forcedPixelRatio: 1,
+//                // forcedBandwidth: 'high' // high or low
+//                // minKbpsForHighBandwidth: 800,
+//                // speedTestExpireMinutes: 60,
+//                speedTestUri: 'http://cdn.sanscolour.com/images/speed-test/50K.jpg',
+//                speedTestKB: 50
+//            }
+//        };
 
         $(window).scroll(function(){
             var content = $('.home-content');
             var nav = $('.nav');
             var left = $('.frame--left');
             var returnTop = $('#returnTop');
-            if(content.hasClass('is-hidden')){
-                    nav.css('display','block');
-                    left.css('display','block');
+            var top = $('body').scrollTop();
+            console.log(top);
+            if(top>500){
+                nav.css('display','block');
+                left.css('display','block');
                 returnTop.css('display','block');
-                }else{
+            }else{
                 nav.css('display','none');
                 left.css('display','none');
                 returnTop.css('display','none');
-
-
             }
 
         })
     </script>
     <link href="./all-321fd7e1.css" media="screen" rel="stylesheet">
     <script>
-        WebFontConfig = {fontdeck: {id: '15513'}};
-
-        (function () {
-            var wf = document.createElement('script');
-            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
+//        WebFontConfig = {fontdeck: {id: '15513'}};
+//
+//        (function () {
+//            var wf = document.createElement('script');
+//            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+//                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+//            wf.type = 'text/javascript';
+//            wf.async = 'true';
+//            var s = document.getElementsByTagName('script')[0];
+//            s.parentNode.insertBefore(wf, s);
+//        })();
     </script>
     <script src="./modernizr.custom-2fccca13.js"></script>
     <!--[if lt IE 9]>
@@ -1320,50 +1320,45 @@
     <img src="images/top.png" alt="">
 </div>
 <script src="./script-abd2a7c7.js"></script>
+<!--<script>-->
+    <!--(function (i, s, o, g, r, a, m) {-->
+        <!--i['GoogleAnalyticsObject'] = r;-->
+        <!--i[r] = i[r] || function () {-->
+                    <!--(i[r].q = i[r].q || []).push(arguments)-->
+                <!--}, i[r].l = 1 * new Date();-->
+        <!--a = s.createElement(o),-->
+                <!--m = s.getElementsByTagName(o)[0];-->
+        <!--a.async = 1;-->
+        <!--a.src = g;-->
+        <!--m.parentNode.insertBefore(a, m)-->
+    <!--})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
+
+    <!--ga('create', 'UA-42231777-1', 'sanscolour.com');-->
+    <!--ga('send', 'pageview');-->
+
+<!--</script>-->
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-42231777-1', 'sanscolour.com');
-    ga('send', 'pageview');
-
-</script>
-<script>
-    var GoSquared = {};
-    GoSquared.acct = "GSN-615971-G";
-    (function (w) {
-        function gs() {
-            w._gstc_lt = +new Date;
-            var d = document, g = d.createElement("script");
-            g.type = "text/javascript";
-            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-            var s = d.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(g, s);
-        }
-
-        w.addEventListener ?
-                w.addEventListener("load", gs, false) :
-                w.attachEvent("onload", gs);
-    })(window);
-    $(".slider7").slider({inEndEffect:'cycle',hasTriggers:false,duration:50000,delay:0,direction:'x',auto:true,immediately:true});
+//    var GoSquared = {};
+//    GoSquared.acct = "GSN-615971-G";
+//    (function (w) {
+//        function gs() {
+//            w._gstc_lt = +new Date;
+//            var d = document, g = d.createElement("script");
+//            g.type = "text/javascript";
+//            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+//            var s = d.getElementsByTagName("script")[0];
+//            s.parentNode.insertBefore(g, s);
+//        }
+//
+//        w.addEventListener ?
+//                w.addEventListener("load", gs, false) :
+//                w.attachEvent("onload", gs);
+//    })(window);
+//    $(".slider7").slider({inEndEffect:'cycle',hasTriggers:false,duration:50000,delay:0,direction:'x',auto:true,immediately:true});
     $("#returnTop").click(function () {
         var speed=200;//滑动的速度
-        var nav = $('.nav');
-        var left = $('.frame--left');
-        var returnTop = $('#returnTop');
         $('body,html').animate({ scrollTop: 0 }, speed);
-        nav.css('display','none');
-        left.css('display','none');
-        returnTop.css('display','none');
+
         return false;
     });
 </script>
