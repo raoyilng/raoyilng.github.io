@@ -308,7 +308,7 @@ table {
 }
 #returnTop{
     position: fixed;
-    right: 0;
+    right: 10px;
     top: 90%;
     cursor: pointer;
     z-index: 999;
