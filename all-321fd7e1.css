@@ -216,6 +216,7 @@ table {
     position: relative;
     /*background-color: red;*/
 }
+
 .topContent .userIcon{
     /*position: absolute;*/
     float: left;
@@ -312,6 +313,9 @@ table {
     cursor: pointer;
     z-index: 999;
     display: none;
+}
+#returnTop img:hover{
+    opacity: 0.5;
 }
 
 .nowrap {
