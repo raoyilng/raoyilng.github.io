@@ -120,11 +120,15 @@
 
         $(window).scroll(function(){
             var content = $('.home-content');
-            var nav = $('.nav')
+            var nav = $('.nav');
+            var left = $('.frame--left')
             if(content.hasClass('is-hidden')){
-                    nav.css('display','block')
+                    nav.css('display','block');
+                left.css('display','block')
                 }else{
-                nav.css('display','none')
+                nav.css('display','none');
+                left.css('display','none');
+
 
             }
 
@@ -167,7 +171,7 @@
 <!--<div class="frame frame&#45;&#45;top"></div>-->
 <!--<div class="frame frame&#45;&#45;right"></div>-->
 <!--<div class="frame frame&#45;&#45;bottom"></div>-->
-<!--<div class="frame frame&#45;&#45;left"></div>-->
+<div class="frame frame--left"></div>
 <nav class="nav is-animated is-disabled" role="navigation">
     <div class="project-list-holder" style="height: 1872px; margin-top: -468px;">
         <div class="v-center-container--small-and-up">
