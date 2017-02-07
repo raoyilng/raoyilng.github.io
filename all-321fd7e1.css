@@ -242,8 +242,63 @@ table {
 .container__centered {
     display: inline-block;
     vertical-align: middle;
-    max-width: 100%;
-    position: relative
+    /*max-width: 100%;*/
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.lunboContent{
+    position: relative;
+}
+.lunboContent .SASS2{
+    position: absolute;
+    left:65px;
+    /*width:230px;*/
+}
+.lunboContent .baoxian{
+    position: absolute;
+    left:464px;
+}
+.lunboContent .car{
+    position: absolute;
+    top:470px;
+    left:209px;
+    /*width: 200px;*/
+}
+.lunboContent .mall{
+    position: absolute;
+    top:200px;
+    left:571px;
+    /*width: 200px;*/
+}
+.lunboContent .draw{
+    position: absolute;
+    top:50px;
+    left: 929px;
+    /*width: 200px;*/
+}
+.lunboContent .other{
+    position: absolute;
+    top:-25px;
+    left:1262px;
+    /*width: 200px;*/
+}
+.lunboContent .SASS{
+    position: absolute;
+    top:393px;
+    left: 1048px;
+    /*width: 280px;*/
+}
+.lunboContent .SASS2s{
+    position: absolute;
+    right:50px;
+    /*width:230px;*/
+}
+.lunboContent .cars{
+    position: absolute;
+    top:470px;
+    right:0px;
+    /*width: 200px;*/
 }
 
 .nowrap {

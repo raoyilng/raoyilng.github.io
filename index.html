@@ -77,11 +77,34 @@
                 border-bottom: 4px solid green;
             }
         }
+        .style2{
+            width:1426px;
+        }
+        .slider{
+            position: relative;
+            overflow: hidden;
+            height: 700px;
+            /*margin:0 auto 10px;*/
+        }
+        .style2 .container{
+            width: 1920px;
+            height: 700px;
+            margin: 0 30px;
+            overflow: hidden;
+        }
+        .slider .content li{
+            float: left;
+            width:1460px;
+            height: 700px;
+            background: #f5f5f5;
+        }
     </style>
     <script type="text/javascript" src="./tracker.js"></script>
     <script async="" src="./analytics.js"></script>
     <script src="./webfont.js" type="text/javascript" async=""></script>
     <script src="./jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./jquery.slider.js"></script>
+
     <script>
         // configuration
         foresight = {
@@ -104,9 +127,7 @@
                 nav.css('display','none')
 
             }
-//            if(content.hasClass('is-hidden')){
-//                console.log('1');
-//            })
+
         })
     </script>
     <link href="./all-321fd7e1.css" media="screen" rel="stylesheet">
@@ -203,38 +224,64 @@
                 <img src="images/logo.png" alt="" class="logotext">
                 <img src="images/bg_obj1.png" alt="" class="rightPic">
             </div>
-            <div class="container__centered container__centered--home">
-                <div class="logo" itemscope="" itemtype="http://schema.org/Organization"><a class="logo__link"
-                                                                                            href="http://sanscolour.com/"
-                                                                                            itemprop="url"> <img
-                        class="logo__img" src="./sanscolour-logo.png"
-                        itemprop="logo" alt="Joakim Jansson"> </a></div>
-                <h1 class="home-headline"><span class="tablet-break">SANS COLOUR IS AN INDEPENDENT DESIGN STUDIO<br
-                        class="mobile-break"> IN NEW YORK, USA</span> <span class="tablet-break">FOUNDED S/S 2014 BY SWEDISH <br
-                        class="mobile-break">GRAPHIC DESIGNER JOAKIM JANSSON</span></h1>
-                <div class="alpha home-contact-details"><span class="email"> <a class=""
-                                                                                href="mailto:joakim@sanscolour.com">joakim@sanscolour.com</a> </span>
-                    <span class="home-contact-details__divider"> ∞ </span> <span class="phone"> <a class=""
-                                                                                                   href="tel:0019179437656">(+1)
-                        917 943 7656</a> </span></div>
-                <div class="home-social">
-                    <ul class="list list--h home-social-list">
-                        <li class="home-social-list__item"><a href="http://blog.sanscolour.com/" target="_blank"
-                                                              rel="external">BLOG</a></li>
-                        <li class="home-social-list__item"><a href="https://www.facebook.com/sanscolour" target="_blank"
-                                                              rel="external">FACEBOOK</a></li>
-                        <li class="home-social-list__item"><a href="http://www.behance.net/joakimjansson"
-                                                              target="_blank" rel="external">BEHANCE</a></li>
-                        <li class="home-social-list__item"><a href="https://www.twitter.com/joakimjansson"
-                                                              target="_blank" rel="external">TWITTER</a></li>
-                        <li class="home-social-list__item"><a href="http://pinterest.com/joakimjansson/" target="_blank"
-                                                              rel="external">PINTEREST</a></li>
-                        <li class="home-social-list__item"><a href="http://www.instagram.com/joakimjansson"
-                                                              target="_blank" rel="external">INSTAGRAM</a></li>
-                        <li class="home-social-list__item"><a href="http://open.spotify.com/user/sanscolour"
-                                                              target="_blank" rel="external">SPOTIFY</a></li>
-                    </ul>
-                </div>
+            <div class="container__centered container__centered--home slider style2 slider7">
+                <!--<div class="">-->
+                    <div class="container">
+                        <ul class="content">
+                            <li class="lunboContent">
+                                <img src="images/SASS2.png" alt="" class="SASS2">
+                                <img src="images/baoxian.png" alt="" class="baoxian">
+                                <img src="images/car.png" alt="" class="car">
+                                <img src="images/mall.png" alt="" class="mall">
+                                <img src="images/draw.png" alt="" class="draw">
+                                <img src="images/other.png" alt="" class="other">
+                                <img src="images/SASS.png" alt="" class="SASS">
+                                <!--<img src="images/SASS2.png" alt="" class="SASS2s">-->
+                                <!--<img src="images/car.png" alt="" class="cars">-->
+                            </li>
+                            <li class="lunboContent">
+                                <img src="images/SASS2.png" alt="" class="SASS2">
+                                <img src="images/baoxian.png" alt="" class="baoxian">
+                                <img src="images/car.png" alt="" class="car">
+                                <img src="images/mall.png" alt="" class="mall">
+                                <img src="images/draw.png" alt="" class="draw">
+                                <img src="images/other.png" alt="" class="other">
+                                <img src="images/SASS.png" alt="" class="SASS">
+                            </li>
+                        </ul>
+                    </div>
+                <!--</div>-->
+                <!--<div class="logo" itemscope="" itemtype="http://schema.org/Organization"><a class="logo__link"-->
+                                                                                            <!--href="http://sanscolour.com/"-->
+                                                                                            <!--itemprop="url"> <img-->
+                        <!--class="logo__img" src="./sanscolour-logo.png"-->
+                        <!--itemprop="logo" alt="Joakim Jansson"> </a></div>-->
+                <!--<h1 class="home-headline"><span class="tablet-break">SANS COLOUR IS AN INDEPENDENT DESIGN STUDIO<br-->
+                        <!--class="mobile-break"> IN NEW YORK, USA</span> <span class="tablet-break">FOUNDED S/S 2014 BY SWEDISH <br-->
+                        <!--class="mobile-break">GRAPHIC DESIGNER JOAKIM JANSSON</span></h1>-->
+                <!--<div class="alpha home-contact-details"><span class="email"> <a class=""-->
+                                                                                <!--href="mailto:joakim@sanscolour.com">joakim@sanscolour.com</a> </span>-->
+                    <!--<span class="home-contact-details__divider"> ∞ </span> <span class="phone"> <a class=""-->
+                                                                                                   <!--href="tel:0019179437656">(+1)-->
+                        <!--917 943 7656</a> </span></div>-->
+                <!--<div class="home-social">-->
+                    <!--<ul class="list list&#45;&#45;h home-social-list">-->
+                        <!--<li class="home-social-list__item"><a href="http://blog.sanscolour.com/" target="_blank"-->
+                                                              <!--rel="external">BLOG</a></li>-->
+                        <!--<li class="home-social-list__item"><a href="https://www.facebook.com/sanscolour" target="_blank"-->
+                                                              <!--rel="external">FACEBOOK</a></li>-->
+                        <!--<li class="home-social-list__item"><a href="http://www.behance.net/joakimjansson"-->
+                                                              <!--target="_blank" rel="external">BEHANCE</a></li>-->
+                        <!--<li class="home-social-list__item"><a href="https://www.twitter.com/joakimjansson"-->
+                                                              <!--target="_blank" rel="external">TWITTER</a></li>-->
+                        <!--<li class="home-social-list__item"><a href="http://pinterest.com/joakimjansson/" target="_blank"-->
+                                                              <!--rel="external">PINTEREST</a></li>-->
+                        <!--<li class="home-social-list__item"><a href="http://www.instagram.com/joakimjansson"-->
+                                                              <!--target="_blank" rel="external">INSTAGRAM</a></li>-->
+                        <!--<li class="home-social-list__item"><a href="http://open.spotify.com/user/sanscolour"-->
+                                                              <!--target="_blank" rel="external">SPOTIFY</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
             </div>
         </div>
         <div class="scroll-indicator"></div>
@@ -1204,6 +1251,8 @@
                 w.addEventListener("load", gs, false) :
                 w.attachEvent("onload", gs);
     })(window);
+    $(".slider7").slider({inEndEffect:'cycle',hasTriggers:false,duration:10000,delay:0,direction:'x',auto:true,immediately:true});
+
 </script>
 </body>
 </html>
