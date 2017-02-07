@@ -233,6 +233,16 @@ table {
     /*width: 211px;*/
     /*height: 90px;*/
 }
+.project-firsttitle{
+    font-size: 14px;
+    margin-top: 141px;
+    line-height: 4.48px;
+    height: 4.48px;
+}
+.project-title{
+    font-size: 36px;
+    margin-top: 25px;
+}
 .topContent .rightPic{
     position: absolute;
     right: 0;
@@ -940,9 +950,11 @@ ul {
 }
 
 .project-description {
-    max-width: 750px;
-    margin: 0 auto 12px auto;
-    line-height: 1.7
+    max-width: 911px;
+    margin: 135px auto 137px auto;
+    line-height: 30px;
+    text-align:left;
+    font-size: 18px;
 }
 
 @media only screen and (min-width: 40em) {
@@ -954,7 +966,7 @@ ul {
 
 @media only screen and (min-width: 59em) {
     .project-description {
-        margin: 0 auto 24px;
+        margin: 135px auto 137px;
         word-spacing: 1px
     }
 }
