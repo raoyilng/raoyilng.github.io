@@ -2091,7 +2091,7 @@ ul {
 
 @media only screen and (min-width: 40em) {
     .project--hintmag img {
-        margin-bottom: 16px
+        /*margin-bottom: 16px*/
     }
 }
 
