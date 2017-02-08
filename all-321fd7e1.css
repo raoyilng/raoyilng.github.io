@@ -706,20 +706,20 @@ html, body {
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s
 }
-
+/*页面内部距离*/
 .main, .contact {
-    padding: 0 35px
+    /*padding: 0 35px*/
 }
 
 @media only screen and (min-width: 40em) {
     .main, .contact {
-        padding: 0 16%
+        /*padding: 0 16%*/
     }
 }
 
 @media only screen and (min-width: 59em) {
     .main, .contact {
-        padding: 0 14%
+        /*padding: 0 14%*/
     }
 }
 
@@ -915,9 +915,10 @@ ul {
         display: inline
     }
 }
-
+/*/页面宽度/*/
 .projects {
-    max-width: 1200px;
+    width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto
 }
 
