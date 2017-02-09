@@ -706,7 +706,7 @@ html, body {
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s
 }
-/*页面内部距离*/
+/*距离*/
 .main, .contact {
     /*padding: 0 35px*/
 }

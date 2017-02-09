@@ -124,15 +124,19 @@
             var left = $('.frame--left');
             var returnTop = $('#returnTop');
             var top = $('body').scrollTop();
-//            console.log(top);
+            var all = $('.index')
             if(top>500){
                 nav.css('display','block');
                 left.css('display','block');
                 returnTop.css('display','block');
+                if(nav.hasClass('is-active')){
+                    all.addClass('nav-expanded');
+                }
             }else{
                 nav.css('display','none');
                 left.css('display','none');
                 returnTop.css('display','none');
+                all.removeClass('nav-expanded');
             }
 
         })
@@ -206,7 +210,7 @@
                     <li id="project-list__item--other" class="project-list__item" data-block-id="other">
                         <span class="project-list__item__title">物料作品</span>
                     </li>
-                    <li id="project-list__item--contact" class="project-list__item" data-block-id="contact">
+                    <li id="project-list__item--me" class="project-list__item" data-block-id="me">
                         <span class="project-list__item__title">关于我</span>
                     </li>
                 </ul>
@@ -462,58 +466,40 @@
                         <img src="images/wuliao6.png" alt="">
                     </div>
                 </div>
+                <div id="block--me" class="js-block block project project--me" data-block-id="me">
+                    <div class="project-content" style="background-color:#ffffff">
+                        <img src="images/me.png" alt="">
+                        <img src="images/meContent.png" alt="" style="margin-top:-50px">
+                    </div>
+                </div>
+                <!--<div id="block&#45;&#45;contact" class="js-block block project contact" data-block-id="contact"-->
+                     <!--style="transform: translate3d(0px, 12230.3px, 0px);">-->
+                    <!--<div class="project-content" style="background-color:#ffffff">-->
+                        <!--&lt;!&ndash;<div class="v-center-container&#45;&#45;small-and-up">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="v-center-container__inner&#45;&#45;small-and-up">&ndash;&gt;-->
+                                <!--<img src="images/me.png" alt="">-->
+                                <!--<img src="images/meContent.png" alt="">-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
 
             </div>
         </div>
     </div>
 </div>
-<div class="js-block-parallax block-placeholder contact-placeholder js-slide" data-block-id="contact"></div>
-<div id="block--contact" class="js-block block--last contact" data-block-id="contact"
-     style="transform: translate3d(0px, 12230.3px, 0px);">
-    <div class="contact-inner is-hidden">
-        <div class="v-center-container--small-and-up">
-            <div class="v-center-container__inner--small-and-up"><h3 class="contact__headline">CONTACT</h3>
-                <p class="alpha contact__body"><span class="single-line--small-and-up">I'M ALWAYS INTERESTED</span>
-                    <span class="single-line--small-and-up">IN NEW PROJECTS.</span></p>
-                <ul class="alpha list list--v contact__details">
-                    <li class="contact__details__item"><a href="mailto:joakim@sanscolour.com">joakim@sanscolour.com</a>
-                    </li>
-                    <li class="contact__details__item contact__details__divider"> ∞</li>
-                    <li class="contact__details__item"><a href="tel:0019179437656" target="_blank">(+1) 917 943 7656</a>
-                    </li>
-                </ul>
-            </div>
-            <footer class="contact__footer">
-                <ul class="list list--v contact__social-list">
-                    <li class="contact__social-list__item"><a href="http://blog.sanscolour.com/"
-                                                              class="contact__footer__link" target="_blank">BLOG</a>
-                    </li>
-                    <li class="contact__social-list__item"><a href="https://www.facebook.com/sanscolour"
-                                                              class="contact__footer__link" target="_blank">FACEBOOK</a>
-                    </li>
-                    <li class="contact__social-list__item"><a href="http://www.behance.net/joakimjansson"
-                                                              class="contact__footer__link" target="_blank">BEHANCE</a>
-                    </li>
-                    <li class="contact__social-list__item"><a href="https://www.twitter.com/joakimjansson"
-                                                              class="contact__footer__link" target="_blank">TWITTER</a>
-                    </li>
-                    <li class="contact__social-list__item"><a href="http://pinterest.com/joakimjansson/"
-                                                              class="contact__footer__link"
-                                                              target="_blank">PINTEREST</a></li>
-                    <li class="contact__social-list__item"><a href="http://www.instagram.com/joakimjansson"
-                                                              class="contact__footer__link"
-                                                              target="_blank">INSTAGRAM</a></li>
-                    <li class="contact__social-list__item"><a href="http://open.spotify.com/user/sanscolour"
-                                                              class="contact__footer__link" target="_blank">SPOTIFY</a>
-                    </li>
-                </ul>
-                <ul class="list list--v contact__options">
-                    <li><a href="http://sanscolour.com/#" class="contact__footer__link">BACK TO TOP</a></li>
-                </ul>
-            </footer>
-        </div>
-    </div>
-</div>
+<!--<div class="js-block-parallax block-placeholder contact-placeholder js-slide" data-block-id="contact"></div>-->
+<!--<div id="block&#45;&#45;contact" class="js-block block&#45;&#45;last contact" data-block-id="contact"-->
+     <!--style="transform: translate3d(0px, 12230.3px, 0px);">-->
+    <!--<div class="contact-inner is-hidden">-->
+        <!--<div class="v-center-container&#45;&#45;small-and-up">-->
+            <!--<div class="v-center-container__inner&#45;&#45;small-and-up">-->
+                <!--<img src="images/me.png" alt="">-->
+                <!--<img src="images/meContent.png" alt="" style="margin-top:-100px">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 
 <div id="returnTop">
@@ -557,6 +543,11 @@
     $(".slider7").slider({inEndEffect:'cycle',hasTriggers:false,duration:50000,delay:0,direction:'x',auto:true,immediately:true});
     $("#returnTop").click(function () {
         var speed=200;//滑动的速度
+        var nav = $('.nav');
+        var all = $('.index')
+        if(all.hasClass('nav-expanded')){
+            all.removeClass('nav-expanded');
+        }
         $('body,html').animate({ scrollTop: 0 }, speed);
 
         return false;
