@@ -222,6 +222,28 @@ table {
     position: relative;
     /*background-color: red;*/
 }
+.project-list__item span.icons{
+    border-radius: 5px;
+    width: 40px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    background-color: red;
+    /* float: left; */
+    /* margin-left: 30px; */
+    position: absolute;
+    left: 12px;
+    color: #bfb7b7;
+    text-align: center;
+    font-weight: bold;
+}
+.project-list__item span.web{
+    background-color:#fff799
+}
+
+.project-list__item span.app{
+    background-color:#d0effe;
+}
 
 .topContent .userIcon{
     /*position: absolute;*/
