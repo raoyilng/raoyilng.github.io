@@ -1259,7 +1259,7 @@ JJ.views = JJ.views || {}, function (t, e) {
     }, n.addListeners = function () {
         this._didScroll = !1, t.addEventListener("scroll", this.onScroll.bind(this)), this.scrollInterval = setInterval(this.onScrollInterval.bind(this), 250)
     }, n.scrollToPosition = function (e, i, n) {
-        console.log("ScrollManager - scrollToPosition", e, i, n);
+        //console.log("ScrollManager - scrollToPosition", e, i, n);
         var s = this.getMaxScrollTop();
         if (e > s && (e = s), void 0 === n && (n = 1), this._scrollingToPosition = !0, i) {
             var o = this;
@@ -1372,11 +1372,11 @@ JJ.views = JJ.views || {}, function (t, e) {
     }, n.addListeners = function () {
         this._model.getDevice().touch ? (this._projectList.addEventListener("touchstart", this.onTouchStart.bind(this), !1), this._projectList.addEventListener("touchmove", this.onTouchMove.bind(this), !1), this._projectList.addEventListener("touchend", this.onTouchEnd.bind(this), !1)) : this._projectList.addEventListener(this._inputEventClick, this.onItemClick.bind(this), !1), this._toggle.addEventListener(this._inputEventClick, this.onToggleClick.bind(this), !1), this._navModel.getEvents().stateChanged.add(this.onStateChanged.bind(this)), this._blocksModel.getEvents().activeBlockChanged.add(this.onActiveBlockChanged.bind(this))
     }, n.onToggleClick = function (t) {
-        console.log("onToggleClick"), t.preventDefault();
-        console.log(this._navModel.getState());
-        console.log(e.models.NavModel.prototype.STATE_EXPANDED);
+        //console.log("onToggleClick"), t.preventDefault();
+        //console.log(this._navModel.getState());
+        //console.log(e.models.NavModel.prototype.STATE_EXPANDED);
         var i = this._navModel.getState() === e.models.NavModel.prototype.STATE_EXPANDED ? "close-nav" : "open-nav";
-        console.log(i);
+        //console.log(i);
         this._model.getTrackingModel().trackEvent(e.models.TrackingModel.CAT.INBOUND_LINKS, e.models.TrackingModel.ACTIONS.CLICK, i), this._navModel.toggle()
     },n.onBodyClick = function (e) {
         e.preventDefault(), t.UTILS.closest(e.target, ".nav") || this._navModel.collapse()
